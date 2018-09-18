@@ -6,8 +6,8 @@ A Slate plugin that simply collapses the selection on escape.
 [View Demo ⬈](https://ianstormtaylor.github.io/slate-plugins/#/slate-collapse-on-escape)
 
 ```js
-import CollapseOnEscape from 'slate-collapse-on-escape'
-import { Editor } from 'slate-react'
+import CollapseOnEscape from '@gitbook/slate-collapse-on-escape'
+import { Editor } from '@gitbook/slate-react'
 
 // Add the plugin to your set of plugins...
 const plugins = [

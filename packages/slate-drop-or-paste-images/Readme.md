@@ -17,8 +17,8 @@ It does not handle dragging and dropping Slate nodes or fragments, which is hand
 [View Demo ⬈](https://ianstormtaylor.github.io/slate-plugins/#/slate-drop-or-paste-images)
 
 ```js
-import InsertImages from 'slate-drop-or-paste-images'
-import { Editor } from 'slate-react'
+import InsertImages from '@gitbook/slate-drop-or-paste-images'
+import { Editor } from '@gitbook/slate-react'
 
 // Add the plugin to your set of plugins...
 const plugins = [

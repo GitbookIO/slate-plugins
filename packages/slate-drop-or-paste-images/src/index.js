@@ -2,10 +2,10 @@
 import Promise from 'es6-promise'
 import isImage from 'is-image'
 import isUrl from 'is-url'
-import logger from 'slate-dev-logger'
+import logger from '@gitbook/slate-dev-logger'
 import loadImageFile from './load-image-file'
 import { extname } from 'path'
-import { getEventTransfer, getEventRange } from 'slate-react'
+import { getEventTransfer, getEventRange } from '@gitbook/slate-react'
 
 /**
  * Insert images on drop or paste.

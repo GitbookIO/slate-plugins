@@ -1,5 +1,5 @@
 {
-  "name": "slate-auto-replace",
+  "name": "@gitbook/slate-auto-replace",
   "description": "A Slate plugin to automatically transform certain input.",
   "version": "0.9.1",
   "license": "MIT",
@@ -10,14 +10,14 @@
     "type-of": "^2.0.1"
   },
   "peerDependencies": {
-    "slate": ">=0.29.0",
-    "slate-react": ">=0.9.0"
+    "@gitbook/slate": ">=0.29.0",
+    "@gitbook/slate-react": ">=0.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
-    "slate": "^0.30.1",
-    "slate-react": "^0.10.1",
+    "@gitbook/slate": "^0.30.1",
+    "@gitbook/slate-react": "^0.10.1",
     "uglify-js": "^2.7.0"
   },
   "scripts": {
@@ -29,10 +29,10 @@
     "watch": "babel --watch --out-dir ./lib ./src --source-maps inline"
   },
   "browserify-global-shim": {
-    "slate": "Slate",
-    "slate-react": "SlateReact"
+    "@gitbook/slate": "@gitbook/slate",
+    "@gitbook/slate-react": "@gitbook/slateReact"
   },
   "keywords": [
-    "slate"
+    "@gitbook/slate"
   ]
 }
