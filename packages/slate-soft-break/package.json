@@ -29,6 +29,6 @@
     "@gitbook/slate-react": "@gitbook/slateReact"
   },
   "keywords": [
-    "@gitbook/slate"
+    "slate"
   ]
 }
