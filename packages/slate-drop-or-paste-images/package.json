@@ -1,5 +1,5 @@
 {
-  "name": "slate-drop-or-paste-images",
+  "name": "@gitbook/slate-drop-or-paste-images",
   "description": "A Slate plugin that inserts images on drop or paste.",
   "version": "0.8.4",
   "license": "MIT",
@@ -18,11 +18,30 @@
     "is-data-uri": "^0.1.0",
     "is-image": "^1.0.1",
     "is-url": "^1.2.2",
-    "slate-dev-logger": "^0.1.0"
+    "@gitbook/slate-dev-logger": "^0.1.0"
   },
   "peerDependencies": {
-    "slate": ">=0.29.0",
-    "slate-react": ">=0.9.0"
+    "@gitbook/slate": ">=0.29.0",
+    "@gitbook/slate-react": ">=0.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "browserify": "^13.0.1",
+    "@gitbook/slate": "^0.34.7",
+    "@gitbook/slate-react": "^0.13.4",
+    "uglify-js": "^2.7.0"
+  },
+  "scripts": {
+    "build": "babel --out-dir ./lib ./src",
+    "build:max": "mkdir -p ./dist && NODE_ENV=production browserify ./src/index.js --transform babelify --transform envify --transform [ browserify-global-shim --global ] --standalone SlateDropOrPasteImages > ./dist/slate-drop-or-paste-images.js",
+    "build:min": "mkdir -p ./dist && NODE_ENV=production browserify ./src/index.js --transform babelify --transform envify --transform [ browserify-global-shim --global ] --transform uglifyify --standalone SlateDropOrPasteImages | uglifyjs > ./dist/slate-drop-or-paste-images.min.js",
+    "clean": "rm -rf ./dist ./lib ./node_modules",
+    "prepublish": "yarn run build:max && yarn run build:min",
+    "watch": "babel --watch --out-dir ./lib ./src --source-maps inline"
+  },
+  "browserify-global-shim": {
+    "@gitbook/slate": "@gitbook/slate",
+    "@gitbook/slate-react": "@gitbook/slateReact"
   },
   "keywords": [
     "slate"

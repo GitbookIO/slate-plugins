@@ -1,8 +1,9 @@
-import DropOrPasteImages from 'slate-drop-or-paste-images'
+
+import DropOrPasteImages from '@gitbook/slate-drop-or-paste-images'
 import React from 'react'
 import initialValue from './value.json'
-import { Editor } from 'slate-react'
-import { Value } from 'slate'
+import { Editor } from '@gitbook/slate-react'
+import { Value } from '@gitbook/slate'
 
 /**
  * Image node renderer.

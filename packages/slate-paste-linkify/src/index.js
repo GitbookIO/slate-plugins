@@ -1,6 +1,6 @@
 import isUrl from 'is-url'
 import toPascal from 'to-pascal-case'
-import { getEventTransfer } from 'slate-react'
+import { getEventTransfer } from '@gitbook/slate-react'
 
 /**
  * A Slate plugin to add soft breaks on return.

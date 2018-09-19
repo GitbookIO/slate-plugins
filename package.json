@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "slate-plugins",
+  "name": "@gitbook/slate-plugins",
   "workspaces": [
     "packages/*"
   ],
@@ -36,31 +36,19 @@
     "react-portal": "^3.1.0",
     "react-router": "^2.5.1",
     "react-router-dom": "^4.1.1",
-    "rollup": "^0.55.1",
-    "rollup-plugin-alias": "^1.4.0",
-    "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-commonjs": "^8.3.0",
-    "rollup-plugin-json": "^2.3.0",
-    "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.1.0",
-    "rollup-plugin-node-resolve": "^3.0.2",
-    "rollup-plugin-replace": "^2.0.0",
-    "rollup-plugin-sourcemaps": "^0.4.2",
-    "rollup-plugin-uglify": "^3.0.0",
-    "slate": "0.40.0",
-    "slate-plain-serializer": "^0.6.0",
-    "slate-react": "0.18.0",
+    "@gitbook/slate": "^0.34.7",
+    "@gitbook/slate-plain-serializer": "^0.5.22",
+    "@gitbook/slate-react": "^0.13.4",
     "source-map-support": "^0.4.0",
     "uglify-js": "^2.7.0",
     "uglifyify": "^3.0.2"
   },
   "peerDependencies": {
-    "slate-auto-replace": "*",
-    "slate-collapse-on-escape": "*",
-    "slate-drop-or-paste-images": "*",
-    "slate-paste-linkify": "*",
-    "slate-soft-break": "*",
-    "slate-when": "*"
+    "@gitbook/slate-auto-replace": "*",
+    "@gitbook/slate-collapse-on-escape": "*",
+    "@gitbook/slate-drop-or-paste-images": "*",
+    "@gitbook/slate-paste-linkify": "*",
+    "@gitbook/slate-soft-break": "*"
   },
   "scripts": {
     "build": "yarn build:rollup && yarn build:parcel",

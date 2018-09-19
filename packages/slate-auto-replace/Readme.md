@@ -5,8 +5,8 @@ A [**Slate**](https://github.com/ianstormtaylor/slate) plugin to automatically r
 [View Demo ⬈](https://ianstormtaylor.github.io/slate-plugins/#/slate-auto-replace)
 
 ```js
-import AutoReplace from 'slate-auto-replace'
-import { Editor } from 'slate-react'
+import AutoReplace from '@gitbook/slate-auto-replace'
+import { Editor } from '@gitbook/slate-react'
 
 // Add the plugin to your set of plugins...
 const plugins = [
