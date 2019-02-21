@@ -1,3 +1,5 @@
+> ⚠️  This repository is archived and we migrated our fork of `slate-auto-replace` to [GitBook's fork](https://github.com/GitbookIO/slate) of [ianstormtaylor/slate](https://github.com/ianstormtaylor/slate).
+
 This repository contains a few of [my](https://github.com/ianstormtaylor) Slate plugins in a single monorepo to keep them easier to develop.
 
 <br/>
